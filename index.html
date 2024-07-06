@@ -3,44 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World with Cats</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .cat-emoji {
-            font-size: 2em;
-        }
-        .hello-world {
-            font-size: 3em;
-            margin: 20px 0;
-        }
-    </style>
+    <title>Image Sharing Forum</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="cat-emoji">😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺</div>
-        <div class="hello-world">Hello World</div>
-        <div class="cat-emoji">😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺😺</div>
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // JavaScript to add more interactivity if needed
-            console.log("Page loaded and ready!");
-        });
-    </script>
+    <header>
+        <div class="container">
+            <h1>Image Sharing Forum</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="upload-section">
+            <h2>Upload an Image</h2>
+            <form id="upload-form">
+                <input type="file" id="image-input" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="gallery-section">
+            <h2>Image Gallery</h2>
+            <div id="image-gallery"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Image Sharing Forum. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
